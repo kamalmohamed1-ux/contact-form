@@ -1,0 +1,112 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#contact-forms {
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 80%;
+    min-width: 320px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+.button-container {
+        background-color: rgb(39, 130, 216);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 30%;
+        border: none
+}
+
+.button-container:hover {
+    background-color: rgb(29, 100, 170);
+    box-shadow: 0 2px 5px gray;
+}
+
+#fname, #email, #message, #subject {
+    width: 350px;
+    max-width: 100%;
+    padding: 14px 12px;
+    margin: 10px 0 10px 16px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+.contact-form label {
+    min-width: 120px;
+    font-weight: 500;
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+    #contact-forms {
+        max-width: 98%;
+        padding: 10px;
+    }
+    .contact-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contact-form label {
+        min-width: 0;
+        text-align: left;
+        margin-bottom: 6px;
+    }
+    #fname, #email, #message, #subject {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 1rem;
+    }
+    .button-container {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #contact-forms {
+        min-width: 0;
+        padding: 4px;
+    }
+    #fname, #email, #message, #subject {
+        font-size: 0.95rem;
+        padding: 10px 6px;
+    }
+}
+
+.contact-form label {
+    min-width: 120px;
+    font-weight: 500;
+    text-align: l;
+}
